@@ -38,7 +38,7 @@
             <form action="" method="post">
             <div class="mb-3">
                 <label for="nik" class="form-label">Nomor Induk Karyawan</label>
-                <input type="text" class="form-control" id="nik" name="nik">
+                <input type="text" class="form-control" id="nik" name="nik" required >
             </div> 
             <div class="mb-3">
                 <label for="nama_karyawan" class="form-label">Nama Karyawan</label>
@@ -62,7 +62,7 @@
             <div class="mb-3">
                 <label for="status_menikah" class="form-label">Status Menikah</label>
                 <select class="form-select" aria-label="Default select example" name="status_menikah" required>
-                    <option selected>Pilih Status</option>
+                    <option value="" selected>Pilih Status</option>
                     <option value="Belum Menikah">Belum Menikah</option>
                     <option value="Menikah Anak 0">Menikah Anak 0</option>
                     <option value="Menikah Anak 1">Menikah Anak 1</option>
