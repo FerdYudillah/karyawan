@@ -33,7 +33,13 @@
                 $statement->bindParam(4, $bagian);
                 $statement->bindParam(5, $id);
                 $statement->execute();
+            ?>
+                <div class="alert alert-success" role="alert">
+                    Berhasil Edit Data 
+                </div>
 
+            <?php 
+                $_SESSION['pesan'] = "Berhasil Edit Data";
                 header('Location: main.php?page=bagian');
             }
             ?>

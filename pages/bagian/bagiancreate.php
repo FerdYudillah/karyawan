@@ -23,13 +23,16 @@
                 $statement->bindParam(3, $jenis_kelamin);
                 $statement->bindParam(4, $bagian);
                 $statement->execute();
-
+            ?>
+                 <div class="alert alert-success" role="alert">
+                   Data Bagian Berhasil Ditambah
+                </div>
+            <?php 
+                    $_SESSION['pesan'] = "Data Bagian Berhasil Ditambah";
                 header('Location: main.php?page=bagian');
 
               }
              
-            
-
               ?>
           </div>
         </div>
