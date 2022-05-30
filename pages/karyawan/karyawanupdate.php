@@ -33,12 +33,7 @@
                 $statement->bindParam(4, $status_menikah);
                 $statement->bindParam(5, $id);
                 $statement->execute();
-            ?>
-                <div class="alert alert-success" role="alert">
-                    Data Berhasil Diubah
-                </div>
-            <?php 
-                $_SESSION['pesan'] = "Data Berhasil Diubah";
+
                 header('Location: main.php?page=karyawan');
             }
             ?>

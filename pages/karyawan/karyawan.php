@@ -5,23 +5,12 @@
           </div>
         </div>
 
-        <?php
-          if ($_SESSION['pesan'] != "kosong") {
-          ?>
-              <div class="alert alert-success" role="alert">
-                  <?php echo $_SESSION['pesan'] ?>
-              </div>
-          <?php
-          $_SESSION['pesan'] = "kosong";
-          }
-         ?>
-         
         <div class="table-responsive">
         <a href="?page=karyawancreate" class="btn btn-success mb-3"> <span data-feather="plus"></span> Data Baru</a>
           <table class="table table-striped table-sm">
             <thead>
               <tr>
-                <th scope="col">No</th>
+                <th scope="col">#</th>
                 <th scope="col">NIK</th>
                 <th scope="col">Nama</th>
                 <th scope="col">Jenis Kelamin</th>
@@ -49,7 +38,7 @@
                 <a href="?page=karyawanupdate&id=<?php echo $data['id'] ?>" class="badge bg-warning">
                 <span data-feather="edit">
               </a>
-              <a href="?page=karyawandelete&id=<?php echo $data['id'] ?>" class="badge bg-danger"> 
+              <a href="?page=karyawandelete&id=<?php echo $data['id'] ?>" class="badge bg-danger">
                 <span data-feather="x-octagon">
               </a>
                 </td>

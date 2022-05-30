@@ -3,7 +3,7 @@
           <h1 class="h2">Tambah Karyawan</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
               <?php 
-                 include_once "../database/database.php";
+              include_once "../database/database.php";
 
               if (isset($_POST['button_simpan'])){
                 $nik = $_POST['nik'];
@@ -24,12 +24,7 @@
                 $statement->bindParam(3, $jenis_kelamin);
                 $statement->bindParam(4, $status_menikah);
                 $statement->execute();
-            ?>
-                <div class="alert alert-success" role="alert">
-                Berhasil Tambah Data
-            </div>
-            <?php 
-                 $_SESSION['pesan'] = "Berhasil Tambah Data";
+
                 header('Location: main.php?page=karyawan');
 
               }
